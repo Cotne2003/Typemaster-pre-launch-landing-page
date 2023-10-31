@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    padding: 64px 165px 39px 165px;
+}
+
+/* ******************************************************************************** */
+/* ******************************  DISPLAY GRID  ********************************** */
+/* ******************************************************************************** */
+
+header {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: 58px 480px 480px;
+    row-gap: 50px;
+    column-gap: 50px;
+}
+
+.head {
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+.typemaster {
+    width: 140%;
+    grid-column-start: 1;
+    grid-column-end: 10;
+}
+
+.keyboard-img {
+    background-image: url(./assets/desktop/image-keyboard.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column-start: 11;
+    grid-column-end: -1;
+    border-radius: 20px;
+}
+
+.phone-keyboard-img {
+    background: url(./assets/desktop/image-phone-and-keyboard.jpg);
+    grid-column-start: 1;
+    grid-column-end: 6;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.glass-keyboard-img {
+    background-image: url(./assets/desktop/image-glass-and-keyboard.jpg);
+    grid-column-start: 6;
+    grid-column-end: 14;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.mechanical {
+    grid-column-start: 15;
+    grid-column-end: -1;
+}
+
+/* ******************************************************************************************************** */
+/* HEADER STYLE */
+/* ******************************************************************************************************** */
+
+.head-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.head-content button {
+    width: 175px;
+    height: 58px;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #E8EFF2;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #162542;
+}
+
+.head-content button:hover {
+    background-color: #162542;
+    color: #FFFFFF;
+    transition: ease-in-out 0.5s;
+}
+
+.typemaster {
+    padding: 15% 40% 20% 0;
+}
+
+.typemaster-content h2 {
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 56px;
+    color: #162542;
+    text-transform: uppercase;
+}
+
+.typemaster-content p {
+    color: #7B8BAD;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 30px;
+}
+
+.typemaster-content-flex {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    gap: 40px;
+}
+
+.typemaster-content-flex div {
+    color: #7B8BAD;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+    min-width: 175px;
+}
+
+.typemaster-content-flex button {
+    min-width: 175px;
+    height: 58px;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #F16718;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.typemaster-content-flex button:hover {
+    background-color: #FF9B62;
+    transition: ease-in-out 0.5s;
+}
+
+.mechanical {
+    justify-content: center;
+    align-items: center;
+    margin: auto 0;
+}
+
+.mechanical-content h2 {
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 36px;
+    color: #162542;
+    text-transform: uppercase;
+}
+
+.mechanical-content p {
+    color: #7B8BAD;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 30px;
+}
+
+/* ******************************************************************************************************* */
+/* ELEMENTS */
+/* ******************************************************************************************************* */
+
+.elements {
+    display: grid;
+    margin-top: 200px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 30px;
+}
+
+.element {
+    min-width: 188px;
+}
+
+.elements h2 {
+    color: #162542;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin-top: 48px;
+}
+
+.elements p {
+    color: #7B8BAD;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    margin-top: 24px;
+}
+
+.last {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 128px;
+    gap: 10px;
+    color: #7B8BAD;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.last span {
+    font-weight: 700;
+}
+
+hr {
+    border: 1px solid #7B8BAD;
+    height: 15px;
+}
+
+@media (max-width: 1250px) {
+
+    body {
+        padding: 64px 83px 39px 83px;
+    }
+
+    .elements {
+        column-gap: 100px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .modes {
+        grid-column: 1/-1;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    header {
+        column-gap: 10px;
+    }
+
+
+}
+
+@media (max-width: 1100px) {
+
+    body {
+        padding: 49px 39px 43px 39px;
+    }
+
+    .elements {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .modes {
+        grid-column: 2/-1;
+        text-align: start;
+    }
+
+    .battery {
+        grid-column: 1/2;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 832px) {
+
+    header {
+        row-gap: 30px;
+        grid-template-rows: 58px 425px 320px 108px;
+    }
+
+
+    .typemaster-content h2 {
+        font-size: 48px;
+        line-height: 48px;
+    }
+
+    .typemaster-content p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .keyboard-img {
+        height: 425px;
+        grid-column-start: 13;
+        grid-column-end: -1;
+    }
+
+    .phone-keyboard-img {
+        height: 320px;
+        grid-column-start: 1;
+        grid-column-end: 7;
+    }
+
+    .glass-keyboard-img {
+        grid-column-start: 7;
+        grid-column-end: -1;
+        height: 320px;
+    }
+
+    .mechanical {
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+
+    .mechanical-content-flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+    }
+
+    .mechanical-content p {
+        margin: 0;
+    }
+
+}
+
+/* ************************************************************************************************* */
+/* MOBILE DESIGN */
+/* ************************************************************************************************* */
+
+@media (max-width: 686px) {
+
+     body {
+        padding: 27px 24.5px 50px 24px;
+    }
+
+    header {
+        grid-template-rows: 48px 327px 372px 220px 225px;
+        row-gap: 20px;
+    }
+
+    .head-content button {
+        width: 150px;
+        height: 48px;
+        color: #162542;
+        font-family: Barlow;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 26px;
+        text-transform: uppercase;
+    }
+
+     .typemaster  {
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+
+    .typemaster  {
+        width: 100%;
+        padding: 0;
+    }
+
+    .typemaster-content h2 {
+        width: 327px;
+        color: #162542;
+        /* font-family: Barlow; */
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 48px;
+        text-transform: uppercase;
+    }
+
+    .typemaster-content button {
+        width: 150px;
+        height: 48px;
+        color: #FFF;
+        font-family: Barlow;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 26px;
+        text-transform: uppercase;
+    }
+
+    .keyboard-img {
+        height: 372px;
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+
+    .phone-keyboard-img {
+        height: 220px;
+    }
+
+    .glass-keyboard-img {
+        height: 220px;
+    }
+
+    .mechanical-content-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .elements {
+        grid-template-columns: 1fr;
+        text-align: center;
+        row-gap: 64px;
+        margin-top: 111px;
+    }
+
+    .bluetooth {
+        grid-column: 1/-1;
+    }
+
+    .modes {
+        grid-column: 1/-1;
+        margin: 0;
+        text-align: center;
+    }
+
+    .battery {
+        margin: 0;
+    }
+
+    .typemaster-content-flex {
+        gap: 32px;
+    }
+}
+    @media (max-width: 400px) {
+        .typemaster-content-flex {
+            margin-top: 20px;
+            flex-direction: column;
+            align-items: start;
+            gap: 8px;
+        }
+
+        .typemaster-content-flex div {
+            margin-left: 11px;
+        }
+}
